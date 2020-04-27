@@ -12,15 +12,15 @@
 	   $ git config --global user.name "Imię i Nazwisko"
 	   $ git config --global user.email "nasz email TAKI SAM jak na gitlabie"
 
-	Jeśli nie mamy klucza SSH (jeśli nie wiemy, czy mamy, to znaczy, że nie mamy)
+	Jeśli nie mamy klucza SSH (jeśli nie wiemy, czy mamy, to znaczy, że nie mamy):
 
 	   $ ssh-keygen -t rsa
-	Zapyta nas, gdzie zapisać, proponuję zatwierdzić propozycję w nawiasie (Enter).
-Następnie zapyta o passphrase, można nacisnąć Enter i zostawić puste. I znów Enter.
+	Zapyta nas, gdzie zapisać, proponuję zatwierdzić propozycję w nawiasie (Enter).  
+Następnie zapyta o passphrase, można nacisnąć Enter i zostawić puste. I znów Enter.  
 Teraz wchodzimy w plik z kluczem publicznym - bash nam wypisze, gdzie on jest, np.
 		
 	   Your public key has been saved in /c/Users/Lenovo/.ssh/id_rsa.pub
-	Zaznaczamy _całą_ zawartość pliku i kopiujemy
+	Otwieramy podany plik w notatniku, zaznaczamy _całą_ zawartość i kopiujemy.  
 Następnie wchodzimy na gitlab w _Settings_->_SSH keys_, wklejamy schowek i klikamy _Add key_.
 
 	Teraz wchodzimy z powrotem w git bash
