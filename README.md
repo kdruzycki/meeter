@@ -34,6 +34,10 @@ Następnie wchodzimy na gitlab w _Settings_->_SSH keys_, wklejamy schowek i klik
 3. Nasz serwer backendowy działa pod adresem  
 http://localhost/meeter-from-here/
 
+## Sprawdzanie, czy działa event
+http://localhost/meeter-from-here/tester.php  
+Najpierw trzeba się zalogować, czyli wykonać event UserLoggedIn i skopiować sobie sessionID otrzymane w odpowiedzi. Będzie potrzebne do praktycznie każdego eventu.
+
 ## Sprawdzanie, czy działa w bazie
 Żeby sprawdzić, czy działa nasz skrypt i tworzy/usuwa/zmienia rekordy w bazie, tak jak chcemy, warto skorzystać z phpMyAdmin pod adresem  
 [https://mysql.nazwa.pl/index.php](https://mysql.nazwa.pl/index.php)  
