@@ -28,4 +28,5 @@ Następnie wchodzimy na gitlab w _Settings_->_SSH keys_, wklejamy schowek i klik
 	   cd /c/xampp/htdocs
 	   $ git clone git@gitlab.com:kdruzycki/meeter-from-here.git
 
+3. Nasz serwer backendowy działa pod adresem _http://localhost/meeter-from-here/_
 
