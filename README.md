@@ -1,7 +1,10 @@
 
+
 # Meeter from here
 
 *Nie commitujemy na master. Tworzymy własnego brancha i otwieramy merge requesty z tego brancha na master.*
+**Jeśli jest coś, czego inni nie wiedzą, a powinni, piszcie w tym pliku (sic!)**
+Można do tego użyć wygodnego edytora Markdown, np. na stronie stackedit.io
 
 ## Quickstart
 
@@ -28,5 +31,11 @@ Następnie wchodzimy na gitlab w _Settings_->_SSH keys_, wklejamy schowek i klik
 	   cd /c/xampp/htdocs
 	   $ git clone git@gitlab.com:kdruzycki/meeter-from-here.git
 
-3. Nasz serwer backendowy działa pod adresem _http://localhost/meeter-from-here/_
+3. Nasz serwer backendowy działa pod adresem 
+http://localhost/meeter-from-here/
 
+## Sprawdzanie, czy działa w bazie
+Żeby sprawdzić, czy działa nasz skrypt i tworzy/usuwa/zmienia rekordy w bazie, tak jak chcemy, warto skorzystać z phpMyAdmin pod adresem
+[https://mysql.nazwa.pl/index.php](https://mysql.nazwa.pl/index.php)
+Login: _scena22_meeter_
+Hasło: _3qu!NEYF#KaeJDH_
