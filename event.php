@@ -3,6 +3,9 @@
 require_once('private/connect.php');
 
 if (!empty($_POST['eventName'])) {
+  $eventData = NULL;
+  if (!empty($_POST['eventData']))
+    $eventData = json_decode($_POST['eventData']);
   switch ($_POST['eventName']) {
     //eventy, które nie są dla zalogowanych
     case 'UserCreated':
@@ -19,9 +22,6 @@ if (!empty($_POST['eventName'])) {
           session_unset();
           die('Niepoprawne sessionID!');
         } else {
-          $eventData = NULL;
-          if (!empty($_POST['eventData']))
-            $eventData = json_decode($_POST['eventData']);
           /*
             Przydatne zmienne:
               - $_SESSION['userID'] - identyfikator usera z bazy danych

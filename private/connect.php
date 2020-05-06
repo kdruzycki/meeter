@@ -11,7 +11,7 @@ try {
   $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 }
 catch(PDOException $e) {
-  die("Błąd połączenia z bazą! {$e->getMessage()}");
+  die("Error connecting to the database! {$e->getMessage()}");
 }
 
 unset($host, $username, $password, $dbname);
