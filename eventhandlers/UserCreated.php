@@ -37,7 +37,7 @@ try {
           $stmt = $conn->prepare("insert into User (Username, Email, Password) values(:username, :email, :password)");
           $stmt->bindValue(":username", $eventData->username, PDO::PARAM_STR);
           $stmt->bindValue(":email", $eventData->email, PDO::PARAM_STR);
-          $stmt->bindValue(":password", $eventData->password, PDO::PARAM_STR);
+          $stmt->bindValue(":password", password_hash($eventData->password, PASSWORD_DEFAULT), PDO::PARAM_STR);
           if (!$stmt->execute())
             $response->errorMessage('Could not add this user.');
           else {
