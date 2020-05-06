@@ -9,7 +9,7 @@ if (!empty($_POST['eventName'])) {
   switch ($_POST['eventName']) {
     //eventy, które nie są dla zalogowanych
     case 'UserCreated':
-      //require_once('eventhandlers/UserCreated.php');
+      require_once('eventhandlers/UserCreated.php');
       break;
     case 'UserLoggedIn':
       //require_once('eventhandlers/UserLoggedIn.php');
