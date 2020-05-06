@@ -39,6 +39,8 @@ http://localhost/meeter-from-here/tester.php
 Najpierw trzeba się zalogować, czyli wykonać event UserLoggedIn i skopiować sobie sessionID otrzymane w odpowiedzi. Będzie potrzebne do praktycznie każdego eventu.
 
 ## Sprawdzanie, czy działa w bazie
+**Edit** Niestety tymczasowo phpMyAdmin się zepsuł przez nazwę.pl, więc możemy tymczasowo korzystać z pliku _runsql.php_.
+
 Żeby sprawdzić, czy działa nasz skrypt i tworzy/usuwa/zmienia rekordy w bazie, tak jak chcemy, warto skorzystać z phpMyAdmin pod adresem  
 [https://mysql.nazwa.pl/index.php](https://mysql.nazwa.pl/index.php)  
 Login: _scena22_meeter_  
