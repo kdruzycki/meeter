@@ -7,8 +7,8 @@ try {
       && isset($eventData->password) && is_string($eventData->password)
       && isset($eventData->email) && is_string($eventData->email)) {
         
-    $eventData->username = trim($eventData->username);
-    $eventData->email = trim($eventData->email);
+    $eventData->username = strtolower(trim($eventData->username));
+    $eventData->email = strtolower(trim($eventData->email));
     
     if (!preg_match('/^\w{1,32}$/', $eventData->username))
       $response->errorMessage = "Incorrect username format.\nThe username can contain solely letters, digits and \"_\" sign and should contain at least 1 and at most 32 of these.\nAny whitespaces at the beginning or the end are trimmed.";
