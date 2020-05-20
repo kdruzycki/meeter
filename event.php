@@ -26,6 +26,7 @@ if (!empty($_POST['eventName'])) {
             Przydatne zmienne:
               - $_SESSION['userID'] - identyfikator usera z bazy danych
               - $eventData - obiekt z danymi naszego eventu
+              - $conn - połączenie z bazą danych
           */
           switch ($_POST['eventName']) {
             //eventy, które są dla zalogowanych
