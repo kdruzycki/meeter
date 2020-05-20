@@ -30,7 +30,7 @@ if (!empty($_POST['eventName'])) {
           switch ($_POST['eventName']) {
             //eventy, które są dla zalogowanych
             case 'UserLoggedOut':
-              //require_once('eventhandlers/UserLoggedOut.php');
+              require_once('eventhandlers/UserLoggedOut.php');
               break;
             case 'UsernameAmended':
               //require_once('eventhandlers/UserLoggedOut.php');
