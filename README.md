@@ -19,9 +19,9 @@ w zależności od eventu obiekt ten musi zawierać odpowiednie pola, przy czym p
 Każde zdarzenie zwraca w odpowiedzi parametr *status*, który przyjmuje wartość *error* w przypadku błędu lub *success* w przypadku sukcesu. W przypadku błędu zazwyczaj odpowiedź zawiera również parametr *errorMessage*. Pozostałe parametry są specyficzne dla poszczególnych zdarzeń.
 
 Poniżej przykładowe payload'y poszczególnych eventów:
-### UserCreated
-#### sessionID – ignorowane.
-#### eventData:
+### *UserCreated*
+#### *sessionID* – ignorowane.
+#### *eventData*:
     {
 	    "username": "abc",
 	    "email": "valid@and.credible.com",
@@ -31,9 +31,9 @@ Poniżej przykładowe payload'y poszczególnych eventów:
     {
 	    "status": "success"
     }
-### UserLoggedIn
-#### sessionID – ignorowane.
-#### eventData:
+### *UserLoggedIn*
+#### *sessionID* – ignorowane.
+#### *eventData*:
     {
 	    "username_or_email": "abc",
 	    "password": "przynajmniejszescznakow"
@@ -43,16 +43,16 @@ Poniżej przykładowe payload'y poszczególnych eventów:
 	    "status": "success",
 	    "sessionID": "user-lu6bg5e0lc48skeovdb31591r6"
     }
-### UserLoggedOut
-#### sessionID – wymagane.
-#### eventData – ignorowane.
+### *UserLoggedOut*
+#### *sessionID* – wymagane.
+#### *eventData* – ignorowane.
 #### odpowiedź:
     {
 	    "status": "success"
     }
-### UsernameAmended
-#### sessionID – wymagane.
-#### eventData:
+### *UsernameAmended*
+#### *sessionID* – wymagane.
+#### *eventData*:
     {
 	    "new_username": "abc1"
     }
