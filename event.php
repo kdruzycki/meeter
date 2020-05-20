@@ -12,7 +12,7 @@ if (!empty($_POST['eventName'])) {
       require_once('eventhandlers/UserCreated.php');
       break;
     case 'UserLoggedIn':
-      //require_once('eventhandlers/UserLoggedIn.php');
+      require_once('eventhandlers/UserLoggedIn.php');
       break;
     default:
       if (!empty($_POST['sessionID'])) {
@@ -26,14 +26,15 @@ if (!empty($_POST['eventName'])) {
             Przydatne zmienne:
               - $_SESSION['userID'] - identyfikator usera z bazy danych
               - $eventData - obiekt z danymi naszego eventu
+              - $conn - połączenie z bazą danych
           */
           switch ($_POST['eventName']) {
             //eventy, które są dla zalogowanych
             case 'UserLoggedOut':
-              //require_once('eventhandlers/UserLoggedOut.php');
+              require_once('eventhandlers/UserLoggedOut.php');
               break;
             case 'UsernameAmended':
-              //require_once('eventhandlers/UserLoggedOut.php');
+              require_once('eventhandlers/UsernameAmended.php');
               break;
             case 'DownloadMeetings':
               //require_once('eventhandlers/DownloadMeetings.php');
@@ -65,7 +66,8 @@ if (!empty($_POST['eventName'])) {
           }
           session_write_close();
         }
-      }
+      } else
+          die('Niepoprawne sessionID!');
       break;
   }
 }
