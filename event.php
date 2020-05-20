@@ -33,7 +33,7 @@ if (!empty($_POST['eventName'])) {
               require_once('eventhandlers/UserLoggedOut.php');
               break;
             case 'UsernameAmended':
-              //require_once('eventhandlers/UserLoggedOut.php');
+              require_once('eventhandlers/UsernameAmended.php');
               break;
             case 'DownloadMeetings':
               //require_once('eventhandlers/DownloadMeetings.php');
