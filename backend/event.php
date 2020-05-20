@@ -20,7 +20,7 @@ if (!empty($_POST['eventName'])) {
         session_start();
         if (empty($_SESSION['userID'])) {
           session_unset();
-          die('Niepoprawne sessionID!');
+          die('{"status":"error","errorMessage":"Incorrect sessionID."}');
         } else {
           /*
             Przydatne zmienne:
@@ -67,7 +67,7 @@ if (!empty($_POST['eventName'])) {
           session_write_close();
         }
       } else
-          die('Niepoprawne sessionID!');
+          die('{"status":"error","errorMessage":"Please provide the sessionID."}');
       break;
   }
 }
