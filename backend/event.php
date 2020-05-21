@@ -2,6 +2,8 @@
 
 require_once('private/connect.php');
 
+header('Content-type: application/json; charset=utf-8');
+
 if (!empty($_POST['eventName'])) {
   $eventData = NULL;
   if (!empty($_POST['eventData']))
